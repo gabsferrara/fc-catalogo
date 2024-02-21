@@ -1,7 +1,9 @@
 import pytest
 from uuid import UUID
 import uuid
-from category import Category
+
+from src.core.category.domain.category import Category
+
 
 
 class TestCategory:
