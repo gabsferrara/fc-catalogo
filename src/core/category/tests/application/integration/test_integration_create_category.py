@@ -5,7 +5,7 @@ from src.core.category.application.use_cases.create_category import CreateCatego
 from src.core.category.infra.in_memory_category_repository import InMemoryCategoryRepository
 
 
-class TestCreateCategory:
+class TestIntegrationCreateCategory:
     def test_create_category_with_valid_date(self):
         repository = InMemoryCategoryRepository() #SQLAlchmy / DjangoORM
         use_case = CreateCategory(repository=repository)
